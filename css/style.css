@@ -72,6 +72,32 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0.6000000238418579px;
+  color: #01353E;
+  position: relative;
+  padding-right: 48px;
+  display: inline-block;
+}
+
+.title::after {
+  content: '/';
+  position: absolute;
+  width: 48px;
+  height: 85px;
+  bottom: -30px;
+  right: 0;
+  color: #00B2A0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 85px;
+}
+
 .header__bottom {
   background-image: url('../images/header-bg.jpg');
   background-repeat: no-repeat;
@@ -131,4 +157,27 @@ body {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.6000000238418579px;
+}
+
+.about {
+  padding: 190px 0 200px;
+}
+
+.about__title {
+  margin-bottom: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about__columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__column {
+  max-width: 480px;
+}
+
+.about__column p + p {
+  margin-top: 30px;
 }
