@@ -159,14 +159,20 @@ body {
   letter-spacing: 0.6000000238418579px;
 }
 
-.about {
+.about,
+.benefits {
   padding: 190px 0 200px;
 }
 
-.about__title {
-  margin-bottom: 95px;
+.about__title,
+.benefits__title {
   left: 50%;
   transform: translateX(-50%);
+}
+
+.about__title,
+.benefits__title {
+  margin-bottom: 95px;
 }
 
 .about__columns {
@@ -180,4 +186,105 @@ body {
 
 .about__column p + p {
   margin-top: 30px;
+}
+
+.benefits {
+  background-color: #F8F8F8;
+}
+
+.benefits__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.benefits__item {
+  max-width: 350px;
+}
+
+.benefits__item-title {
+  text-align: center;
+  position: relative;
+  padding-left: 65px;
+  color: #242121;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.6000000238418579px;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 52px;
+}
+
+.benefits__item-title::before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefits__item-title--1::before {
+  background-image: url('../images/benefits/1.svg');
+}
+
+.benefits__item-title--2::before {
+  background-image: url('../images/benefits/2.svg');
+}
+
+.benefits__item-title--3::before {
+  background-image: url('../images/benefits/3.svg');
+}
+
+.benefits__item-text {
+  margin-top: 20px;
+}
+
+.benefits__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits__descr {
+  max-width: 600px;
+}
+
+.benefits__descr p + p {
+  margin-top: 30px;
+}
+
+.benefits__progress {
+  max-width: 350px;
+}
+
+.benefits__progress-item {
+  width: 350px;
+}
+
+.benefits__progress-item + .benefits__progress-item {
+  margin-top: 20px;
+}
+
+.benefits__progress-bar {
+  width: 350px;
+  height: 15px;
+  background-image: url('../images/wave-line.svg');
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.benefits__progress-bar span {
+  position: absolute;
+  right: -50px;
+  top: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6000000238418579px;
+  color: #242121;
 }
