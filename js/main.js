@@ -1,5 +1,10 @@
 $(function() {
-    Fancybox.bind()
+    Fancybox.bind();
+
+    $('.blog__slider').slick({
+        arrows: false,
+        dots: true
+    })
 
 
 
