@@ -168,7 +168,9 @@ body {
 .about__title,
 .benefits__title,
 .gallery__title,
-.blog__title {
+.blog__title,
+.team__title,
+.prices__title {
   left: 50%;
   transform: translateX(-50%);
 }
@@ -318,7 +320,9 @@ body {
 }
 
 .gallery__title,
-.blog__title {
+.blog__title,
+.team__title,
+.prices__title {
   margin-bottom: 210px;
 }
 
@@ -435,6 +439,10 @@ body {
   letter-spacing: 0.6000000238418579px;
 }
 
+.blog {
+  margin-bottom: 200px;
+}
+
 .blog__slide-content {
   text-align: right;
 }
@@ -487,4 +495,92 @@ body {
   line-height: 56px;
   letter-spacing: 0.6000000238418579px;
   margin-bottom: 10px;
+}
+
+.team {
+  margin-bottom: 200px;
+}
+
+.team__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  text-align: center;
+}
+
+.team__name {
+  margin-top: 25px;
+  color: #242121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.6000000238418579px;
+}
+
+.team__position {
+  color: #242121;
+}
+
+.prices {
+  background-color: #F8F8F8;
+  padding: 200px 0;
+}
+
+.prices__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price__item {
+  padding: 45px 30px;
+  background-color: #fff;
+  min-height: 575px;
+  position: relative;
+}
+
+.prices__item-title {
+  color: #01353E;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+ul.prices__list {
+  margin-bottom: auto;
+}
+
+ul.prices__list li {
+  color: #242121;
+}
+
+ul.prices__list li + li {
+  margin-top: 20px;
+}
+
+.prices__num {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #01353E;
+  margin-top: auto;
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prices__num sup {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.map {
+  max-width: 1475px;
+  margin: 200px auto;
 }
