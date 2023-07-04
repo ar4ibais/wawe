@@ -170,7 +170,8 @@ body {
 .gallery__title,
 .blog__title,
 .team__title,
-.prices__title {
+.prices__title,
+.footer__title {
   left: 50%;
   transform: translateX(-50%);
 }
@@ -322,7 +323,8 @@ body {
 .gallery__title,
 .blog__title,
 .team__title,
-.prices__title {
+.prices__title,
+.footer__title {
   margin-bottom: 210px;
 }
 
@@ -583,4 +585,107 @@ ul.prices__list li + li {
 .map {
   max-width: 1475px;
   margin: 200px auto;
+}
+
+.footer__inner {
+  display: flex;
+  margin-bottom: 200px;
+  justify-content: space-between;
+}
+
+.form {
+  max-width: 570px;
+}
+
+.footer__inner input,
+.footer__inner textarea {
+  border-bottom: 2px solid #dadada;
+  border: none;
+  border-bottom: 2px solid #dadada;
+  padding: 5px 5px 20px;
+  width: 100% !important;
+}
+
+.footer__inner input::placeholder,
+.footer__inner textarea::placeholder {
+  max-width: 260px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6000000238418579px;
+  color: #00B2A0;
+}
+
+.footer__inner input {
+  margin-bottom: 35px;
+}
+
+.footer__inner textarea {
+  resize: none;
+  height: 155px !important;
+  margin-bottom: 70px;
+}
+
+.footer__inner button {
+  background-color: transparent;
+  padding: 24px 110px;
+  border: 1px solid rgb(196, 196, 196);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6000000238418579px;
+  color: #242121;
+}
+
+.footer__contacts {
+  width: 600px;
+}
+
+.footer__contacts {
+  background-color: #F8F8F8;
+  padding: 50px 50px 70px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.6000000238418579px;
+  color: #242121;
+}
+
+.footer__questions,
+.footer__phone {
+  margin-bottom: 65px;
+}
+
+.footer__address {
+  max-width: 330px;
+}
+
+.footer__socials {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.footer__social-link {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6000000238418579px;
+  color: #242121;
+  transition: all .3s;
+}
+
+.footer__social-link + .footer__social-link {
+  margin-left: 10px;
+}
+
+.footer__social-link:hover {
+  color: #00B2A0;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00B2A0;
+  padding: 70px 0 50px;
 }
