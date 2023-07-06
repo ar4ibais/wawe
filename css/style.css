@@ -701,6 +701,12 @@ ul.prices__list li + li {
 }
 
 @media(max-width: 992px) {
+  .title {
+    font-size: 34px;
+  }
+  .title::after {
+    font-size: 50px;
+  }
   .header__mob-btn {
     display: block;
     border: none;
@@ -746,6 +752,50 @@ ul.prices__list li + li {
     font-size: 150px;
     line-height: 200px;
   }
+  .about, .benefits, .highs {
+    padding: 100px 0;
+  }
+  .about__title, .benefits__title, .highs__title {
+    margin-bottom: 70px;
+  }
+  .about__column {
+    max-width: 350px;
+  }
+  .benefits__items {
+    display: block;
+  }
+  .benefits__item {
+    max-width: 100%;
+  }
+  .benefits__item + .benefits__item {
+    margin-top: 30px;
+  }
+  .benefits__content {
+    flex-direction: column;
+  }
+  .benefits__descr {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media(max-width: 768px) {
+  .title {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .title::after {
+    font-size: 40px;
+  }
+  .about__columns {
+    display: block;
+  }
+  .about__column {
+    max-width: 100%;
+  }
+  .benefits__items {
+    margin-bottom: 70px;
+  }
 }
 
 @media(max-width: 550px) {
@@ -756,5 +806,8 @@ ul.prices__list li + li {
   .header__subtitle {
     font-size: 18px;
     line-height: 24px;
+  }
+  .benefits__progress {
+    display: none;
   }
 }
