@@ -1,5 +1,6 @@
 html{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -332,6 +333,7 @@ body {
 }
 
 .gallery {
+  padding-top: 100px;
   margin-bottom: 200px;
 }
 
@@ -828,6 +830,9 @@ ul.prices__list li + li {
   .blog,
   .team {
     margin-bottom: 100px;
+  }
+  .gallery {
+    padding-top: 0;
   }
   .gallery__images {
     grid-gap: 20px;
