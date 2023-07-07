@@ -787,7 +787,8 @@ ul.prices__list li + li {
   .gallery__title, .blog__title, .team__title, .prices__title, .footer__title {
     margin-bottom: 100px;
   }
-  .gallery {
+  .gallery,
+  .blog {
     margin-bottom: 100px;
   }
   .gallery__images {
@@ -806,6 +807,9 @@ ul.prices__list li + li {
   }
   .gallery__play {
     height: 450px;
+  }
+  .blog__slider-inner {
+    min-height: 600px;
   }
 }
 
@@ -852,6 +856,21 @@ ul.prices__list li + li {
     font-size: 45px;
     line-height: 60px;
   }
+  .blog__slider-inner {
+    min-height: auto;
+    padding: 50px 0;
+  }
+  .blog__slide-content {
+    padding: 100px 0 80px;
+  }
+  .blog__slide-link {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .blog__slider .slick-dots button {
+    height: 10px;
+    width: 10px;
+  }
 }
 
 @media(max-width: 550px) {
@@ -892,5 +911,14 @@ ul.prices__list li + li {
   .gallery__num {
     font-size: 35px;
     line-height: 50px;
+  }
+  .blog__slide-link {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .blog__slide-content {
+    padding: 50px 0;
   }
 }
