@@ -777,6 +777,36 @@ ul.prices__list li + li {
     max-width: 100%;
     margin-top: 30px;
   }
+  .highs {
+    background-image: none;
+  }
+  .highs__content {
+    padding-right: 0;
+    max-width: 100%;
+  }
+  .gallery__title, .blog__title, .team__title, .prices__title, .footer__title {
+    margin-bottom: 100px;
+  }
+  .gallery {
+    margin-bottom: 100px;
+  }
+  .gallery__images {
+    grid-gap: 20px;
+  }
+  .gallery__more,
+  .gallery__blockquote-wrapper,
+  .gallery__play {
+    margin-bottom: 100px;
+  }
+  .gallery__blockquote-wrapper {
+    padding: 50px 0;
+  }
+  .gallery__blockquote-author {
+    right: -60px;
+  }
+  .gallery__play {
+    height: 450px;
+  }
 }
 
 @media(max-width: 768px) {
@@ -796,6 +826,32 @@ ul.prices__list li + li {
   .benefits__items {
     margin-bottom: 70px;
   }
+  .gallery__images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery__more,
+  .gallery__blockquote-wrapper,
+  .gallery__play {
+    margin-bottom: 70px;
+  }
+  .gallery__more-link {
+    padding: 20px 50px;
+  }
+  .gallery__blockquote {
+    font-size: 27px;
+  }
+  .gallery__blockquote-author {
+    right: 10px;
+    bottom: -20px;
+  }
+  .gallery__play {
+    height: 350px;
+  }
+  .gallery__num {
+    font-size: 45px;
+    line-height: 60px;
+  }
 }
 
 @media(max-width: 550px) {
@@ -809,5 +865,32 @@ ul.prices__list li + li {
   }
   .benefits__progress {
     display: none;
+  }
+  .gallery__btn, .gallery__more-link {
+    font-size: 18px;
+  }
+  .gallery__btn + .gallery__btn {
+    margin-left: 15px;
+  }
+  .gallery__more-link {
+    padding: 20px;
+  }
+  .gallery__more, .gallery__blockquote-wrapper, .gallery__play {
+    margin-bottom: 50px;
+  }
+  .gallery__blockquote {
+    line-height: 30px;
+  }
+  .gallery__play {
+    height: 275px;
+  }
+  .gallery__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+  .gallery__num {
+    font-size: 35px;
+    line-height: 50px;
   }
 }
