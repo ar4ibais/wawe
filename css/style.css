@@ -117,6 +117,11 @@ body {
   position: fixed;
   top: 0;
   z-index: 2;
+  transition: all .3s;
+}
+
+.header__top.active {
+  background-color: #00B2A0;
 }
 
 .header__top-inner {
@@ -727,11 +732,17 @@ ul.prices__list li + li {
 }
 
 @media(max-width: 992px) {
+  body.active {
+    overflow: hidden;
+  }
   .title {
     font-size: 34px;
   }
   .title::after {
     font-size: 50px;
+  }
+  .header__top {
+    padding: 20px 0 10px;
   }
   .header__mob-btn {
     display: block;
