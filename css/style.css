@@ -700,6 +700,32 @@ ul.prices__list li + li {
   padding: 70px 0 50px;
 }
 
+
+
+
+
+
+
+
+
+
+@media(max-width: 1200px) {
+  .footer__contacts {
+    padding: 30px;
+  }
+}
+
+@media(max-width: 1080px) {
+  .team__inner,
+  .prices__inner {
+    flex-wrap: wrap;
+  }
+  .team__item,
+  .price__item {
+    margin-bottom: 25px;
+  }
+}
+
 @media(max-width: 992px) {
   .title {
     font-size: 34px;
@@ -788,7 +814,8 @@ ul.prices__list li + li {
     margin-bottom: 100px;
   }
   .gallery,
-  .blog {
+  .blog,
+  .team {
     margin-bottom: 100px;
   }
   .gallery__images {
@@ -810,6 +837,26 @@ ul.prices__list li + li {
   }
   .blog__slider-inner {
     min-height: 600px;
+  }
+  .prices {
+    padding: 100px 0;
+  }
+  .map {
+    margin: 100px auto;
+  }
+  .footer__inner {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .form {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer__contacts {
+    width: 100%;
+  }
+  .footer__socials {
+    margin-bottom: 100px;
   }
 }
 
@@ -870,6 +917,38 @@ ul.prices__list li + li {
   .blog__slider .slick-dots button {
     height: 10px;
     width: 10px;
+  }
+  .team__inner,
+  .prices__inner {
+    display: block;
+  }
+  .team__item img {
+    margin: 0 auto;
+  }
+  ul.prices__list {
+    text-align: center;
+  }
+  .footer__inner,
+  .footer__socials {
+    margin-bottom: 70px;
+  }
+  .footer__inner textarea {
+    margin-bottom: 50px;
+  }
+  .footer__inner button {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .footer__contacts,
+  .footer__social-link {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .footer__questions, .footer__phone {
+    margin-bottom: 40px;
+  }
+  .footer__bottom {
+    padding: 30px 0 10px;
   }
 }
 
